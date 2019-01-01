@@ -1,0 +1,61 @@
+<html !DOCTYPE>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Spooky Mansion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body> 
+  <div class="container0">
+        <div class="row justify-content-center">
+    <p class="intro">You were hired to go into a house where the begotten reside, and interact with them. <br>
+Most begotten souls are innocent, but many are corrupt. This is dangerous because the evil can corrupt the innocent ones.<br>
+ It is your job to find out which are savable and get them out of the house as soon as possible.<br>
+The bad ones must be contained and kept away from the savable souls. Be Careful!</p>
+</div>
+</div>
+<div class="container1">
+<div class="row justify-content-center">  
+      <img class= "bedroom1"src="images/hallway1_01.png" alt="bedroom">
+       
+        <img id= "guy1" src="images/guy1_body_talk01.gif" alt="guy1";  >
+        <div id=char1> 
+        <img id= "guy1" id="standing" src="images/guy1_body_standing01.gif" alt="guy1"; >
+    </div> 
+    </div>
+    <div class="row justify-content-center">
+        <p class="dialogue"><span id=guy1d>Welcome to my chamber my dear Hehehehe.....</span></p>
+    </div>
+  </div>      
+
+    <script type="text/javascript">
+
+var x = "";
+
+var i = 0;      
+
+document.onmousedown = function(){
+    var guy1= ["Lost","Very well", "Since you are here...","tell me","How are you?"];
+ 
+
+  if( i < guy1.length) {
+    x += guy1[i++];
+    //guy1.remove(i-1);
+   // $(this).prev().remove();
+  document.getElementById("guy1d").innerHTML = x;
+  document.getElementById("char1").style.opacity = "0"
+  window.setTimeout(document.getElementById("char1").style.display = "none", 1000);
+  //window.setTimeout("document.getElementById("char1").style.display='none';", 3000)
+document.getElementById("char1").style.opacity = "1.0"; 
+$(".x:last-guy1").remove();
+};
+};   
+
+
+   //1280x800, 1920x1200
+   //<body style="color:red;background-color:black;" > 	
+    </script>
+</body>
+</html>

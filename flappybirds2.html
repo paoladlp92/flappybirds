@@ -1,0 +1,45 @@
+<html !DOCTYPE>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> 
+    <script type="text/javascript">
+    var cvs = document.getElementById("canvas");
+     var ctx = getContext("2d");
+      
+    
+     //load images
+     var bird = new Image();
+     var bg = new Image();
+     var fg = new Image();
+     var pipeNorth = new Image();
+     var pipeSouth = new Image();
+
+     bird.src = "images/bird.jpg";
+     bg.src = "images/bg.png";
+     fg.src = "images/fg.png";
+     pipeNorth.src= "images/pipenorth.png";
+     pipeSouth.src = "images/pipesouth.png";
+
+     var gap = 75;
+     var constant = pipeNorth.height+gap;
+     
+     function draw(){
+         //ctx.drawImage(bg,0,0); 
+//requestAnimationFrame(draw);
+         ctx.drawImage(bg,0,0);
+         ctx.drawImage(pipeNorth, 100, 0);
+         ctx.drawImage(pipeSorth, 100, 0+Constant);
+     }
+     var imageName = newImage();
+     imageName.src="images/img.png";
+     var audioName = new Audio();
+     audioName.src= "audio/audio.png";
+     ctx.drawImage(imageName,X,Y,Width,Height);
+draw();
+    
+    </script>
+</body>
+</html>
